@@ -107,7 +107,7 @@ public class MainActivity extends Activity {
                 public void run(AccountManagerFuture<Bundle> future) {
                     try {
                         Bundle result = future.getResult();
-                        Log.d("KVEST_TAG", result.toString());
+                        Log.d("KVEST_TAG", "result_of_login=" + result.toString());
                     } catch (IOException ioEx) {
                         Log.d("KVEST_TAG", "ioEx=" + ioEx.getMessage());
                     } catch (OperationCanceledException oce) {
